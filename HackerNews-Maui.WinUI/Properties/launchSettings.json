@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HackerNews_Maui.WinUI": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  }
+}
