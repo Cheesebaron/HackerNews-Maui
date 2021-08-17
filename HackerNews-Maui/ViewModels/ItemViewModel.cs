@@ -1,4 +1,5 @@
-﻿using HackerNews_Maui.Models;
+﻿using HackerNews_Maui.Extensions;
+using HackerNews_Maui.Models;
 
 namespace HackerNews_Maui.ViewModels
 {
@@ -12,7 +13,8 @@ namespace HackerNews_Maui.ViewModels
         }
 
         public string Title => model.Title ?? string.Empty;
-        public string Text => model.Text ?? string.Empty;
+        public string Text => (model.Text ?? string.Empty).Left(280);
+        public string By => model.By ?? string.Empty;
         public int Score => model.Score;
     }
 }
